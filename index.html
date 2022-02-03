@@ -1,0 +1,48 @@
+<html>
+<title>TUGAS 13</title>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<img src="atas.jpg" width=1300  height=300>
+<div class="w3-bar w3-yellow">
+ <button class="w3-bar-item w3-button" onclick="kendaraan('welcome')">WELCOME</button>
+ <button class="w3-bar-item w3-button" onclick="kendaraan('mobil')">MOBIL</button>
+ <button class="w3-bar-item w3-button" onclick="kendaraan('pesawat')">PESAWAT</button>
+ <button class="w3-bar-item w3-button" onclick="kendaraan('motor')">MOTOR</button>
+ <button class="w3-bar-item w3-button" onclick="kendaraan('kereta')">KERETA</button>
+</div>
+<center>
+<div id="welcome" class="w3-container kendaraan">
+	<h1>WELCOME</h1>
+	<br>
+	<h2>10121032 - SANDY WANDIRA PUTRA (IF-1)</h2>
+</div>
+</center>
+<div id="mobil" class="w3-container kendaraan" style="display:none">
+	<h3>MOBIL SPORT</h3>
+	<img class="w3-animate-fading" src="1.jpg" style="width:40%">
+</div>
+<div id="pesawat" class="w3-container kendaraan" style="display:none">
+	<h3>PESAWAT TERBANG</h3>
+	<img class="w3-animate-bottom" src="2.jpg" style="width:40%">
+</div>
+<div id="motor" class="w3-container kendaraan" style="display:none">
+	<h3>MOTOR</h3>
+	<img class="w3-animate-top" src="3.jpg" style="width:40%">
+</div>
+<div id="kereta" class="w3-container anime" style="display:none">
+	<h3>KERETA</h3>
+	<img class="w3-animate-zoom" src="4.jpg" style="width:40%">
+</div>
+<script>
+function kendaraan(kendaraan) {
+ var i;
+ var x = document.getElementsByClassName("kendaraan");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(kendaraan).style.display = "block"; 
+}
+</script>
+</body>
+</html>
